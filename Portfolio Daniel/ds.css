@@ -3,25 +3,25 @@
       --glass: rgba(255,255,255,0.04);
       --glass-2: rgba(255,255,255,0.02);
       --radius: 15px;
-      color-scheme: dark;
+      --color-scheme: dark;
       --bg: #111b1b;
-      --card: #000000;
+      --card: #0a0c1a;
       --muted: #ffffff;
       color: #d8c9d7;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-family: Arial;
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg) 0%, #071023 100%);}
     .container{max-width:1100px;margin:40px auto;padding:24px}
 
     /* Header */
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .header{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px}
     .logo{width:98px;height:78px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#55d8ff);display:flex;align-items:center;justify-content:center;font-weight:800;color:#15616e}
     nav{display:flex;gap:18px;align-items:center}
     nav a{color:var(--muted);text-decoration:none;font-weight:600}
     nav a:hover{color:var(--accent)}
-    .cta{background:linear-gradient(90deg,var(--accent),#2f8a46);padding:10px 14px;border-radius:90px;color:#071023;font-weight:700;text-decoration:none}
+    .cta{background:linear-gradient(90deg,var(--accent),#2f8a46);padding:10px 14px;border-radius:90px;color:#8d8325;font-weight:700;}
 
     /* leveling */
     .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:23px;;margin-top:53px}
@@ -43,39 +43,39 @@
     section{margin-top:8tpx}
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
     .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(21, 174, 194, 0.6)}
-    .card p{color:var(--muted);margin:0 0 12px 0;font-weight:600}
+    .card p{color:var(--muted);margin:0 0 12px 0;font-weight:750}
     .tags{display:flex;gap:8px;flex-wrap:wrap}
     .tag{padding:6px 8px;border-radius:8px;background:var(--glass);font-size:12px;color:var(--muted)}
-    .card .actions{display:flex;gap:8px;margin-top:12px}
+    .actions{display:flex;gap:8px;margin-top:12px}
     .btn{padding:8px 10px;border-radius:10px;border:none;background:transparent;color:var(--accent);cursor:pointer;font-weight:700}
 
     /* Footer / Contact */
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     form{display:flex;flex-direction:column;gap:12px}
-    input,textarea{background:transparent;border:10px solid rgba(171, 187, 33, 0.06);padding:12px;border-radius:10px;color:inherit}
-    input::placeholder,textarea::placeholder{color:rgba(3, 61, 221, 0.45);font-weight:900}
+    input,textarea{background:transparent;border:10px solid rgba(19, 117, 182, 0.6);padding:12px;border-radius:51px;color:inherit}
+    input::placeholder,textarea::placeholder{color:rgba(157, 247, 187, 0.45);font-weight:600}
     .muted{color:var(--muted)}
+
     button {
     background-color: #0329a8;
-    color: #fff;
+    color: #0e7a25;
     padding: 10px 20px;
-    border: none;
     border-radius: 10px;
-    
+    font-weight: 900px;
 }
 
 button:hover {
-    background-color: #8b0880;
+    background-color: #f3f3f3;
     
 }
 
 footer{
-    background-color: #0329a8;
-    color: #fff;
+    background-color: #080435;
+    color: #5b15cc;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    font-weight: 600px;
+    font-weight: 900px;
     
 }
 
